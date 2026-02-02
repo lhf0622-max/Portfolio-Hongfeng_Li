@@ -1,3 +1,12 @@
+window.addEventListener('pageshow', (event) => {
+    const loader = document.getElementById('page-loader');
+    if (event.persisted || (loader && !loader.classList.contains('hidden'))) {
+        if (loader) {
+            loader.classList.add('hidden');
+        }
+    }
+});
+
 window.addEventListener('load', () => {
     const loader = document.getElementById('page-loader');
     if (loader) {

@@ -1,0 +1,116 @@
+ .rainbow-container {
+     position: relative;
+     width: 100%;
+     height: 200px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     perspective: 1000px;
+ }
+
+ .text-layer {
+     position: absolute;
+     white-space: nowrap;
+     font-size: clamp(1.8rem, 8vw, 6rem);
+     font-family: 'JetBrains Mono', monospace;
+     font-weight: 700;
+     user-select: none;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+     will-change: transform;
+ }
+
+ .layer-6 {
+     color: #9b59b6;
+     z-index: 1;
+ }
+
+ .layer-5 {
+     color: #3498db;
+     z-index: 2;
+ }
+
+ .layer-4 {
+     color: #2ecc71;
+     z-index: 3;
+ }
+
+ .layer-3 {
+     color: #ffd700;
+     z-index: 4;
+ }
+
+ .layer-2 {
+     color: #ff8c42;
+     z-index: 5;
+ }
+
+ .layer-1 {
+     color: #e74c3c;
+     z-index: 6;
+ }
+
+ .layer-top {
+     color: #fff;
+     z-index: 7;
+ }
+
+ #works-title {
+     opacity: 0;
+     transform: translateY(50px);
+ }
+
+ .work-card {
+     opacity: 0;
+     transform: translateY(80px);
+     perspective: 1000px;
+     will-change: transform, opacity;
+ }
+
+ .image-wrapper {
+     position: relative;
+     width: 100%;
+     overflow: hidden;
+     transform-style: preserve-3d;
+     transition: transform 0.1s ease-out;
+ }
+
+ .img-bw {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     filter: grayscale(100%);
+     transition: opacity 0.5s ease;
+ }
+
+ .img-color {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     opacity: 0;
+     transition: opacity 0.6s cubic-bezier(0.2, 0, 0.2, 1);
+ }
+
+ .work-card:hover .img-color {
+     opacity: 1;
+ }
+
+ .work-title-link {
+     transition: transform 0.6s cubic-bezier(0.2, 0, 0.2, 1), text-shadow 0.8s cubic-bezier(0.2, 0, 0.2, 1);
+     display: inline-block;
+ }
+
+ .work-card:hover .work-title-link {
+     transform: translateX(20px);
+     text-shadow:
+         3px 0 0 #e74c3c,
+         6px 0 0 #ff8c42,
+         9px 0 0 #ffd700,
+         12px 0 0 #2ecc71,
+         15px 0 0 #3498db,
+         16px 0 0 #9b59b6;
+ }

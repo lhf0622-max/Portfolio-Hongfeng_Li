@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction_installation Project - Hongfeng Li Portfolio</title>
+    <link rel="stylesheet" href="../css/loader.css">
+    <link rel="icon" type="image/png" href="../images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../imagesg/favicon.svg" />
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png" />
+    <link rel="manifest" href="../images/site.webmanifest" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=DM+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/worksglobal.css">
+
+</head>
+
+<body class="bg-black">
+    <div id="page-loader">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <canvas id="particle-canvas"></canvas>
+
+    <header
+        class="fixed top-0 w-full z-40 px-4 md:px-8 py-4 md:py-6 flex flex-col md:flex-row justify-between items-center bg-black/10 backdrop-blur-sm gap-4">
+        <div class="text-lg md:text-xl font-bold tracking-tighter mono italic">byHongfengLi</div>
+        <nav class="flex gap-4 md:gap-8 text-[10px] md:text-sm font-medium mono">
+            <a href="../index.html"
+                class="nav-link opacity-50 hover:opacity-100 hover:underline underline-offset-2">HOME</a>
+            <a href="../index.html#works"
+                class="nav-link opacity-50 hover:opacity-100 hover:underline underline-offset-2">WORKS</a>
+            <a href="about_me.html"
+                class="nav-link opacity-50 hover:opacity-100 hover:underline underline-offset-2">ABOUT ME</a>
+        </nav>
+    </header>
+
+    <main class="pt-24" id="works">
+        <section class="project-section mb-32 border-t border-white/5">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../images/img1.jpg" alt="P1-1"></div>
+                    <div class="swiper-slide"><img src="../images/img2.png" alt="P1-2"></div>
+                    <div class="swiper-slide"><img src="../images/img3.png" alt="P1-3"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-8 py-20 flex flex-col md:flex-row justify-between gap-16">
+                <div class="md:w-1/2 reveal">
+                    <h1 class="text-5xl md:text-7xl font-bold tracking-tighter mono italic uppercase leading-none">
+                        Tangram.me</h1>
+                    <div class="mt-8 flex gap-4">
+                        <span
+                            class="border border-white/20 px-4 py-1 rounded-full text-[10px] mono opacity-60 uppercase">3d</span>
+                        <span
+                            class="border border-white/20 px-4 py-1 rounded-full text-[10px] mono opacity-60 uppercase">Installation</span>
+                    </div>
+                </div>
+                <div class="md:w-1/2 reveal">
+                    <div class="text-lg md:text-xl text-zinc-400 leading-relaxed font-light space-y-2">
+                        <p>
+                            Tangram.me is a modular mirror system that reinterprets the traditional Tangram puzzle.
+                            Composed of eleven geometric pieces, it invites users to reconfigure their own reflection.
+                        </p>
+                        <p>
+                            The project transforms a functional object into an interactive art piece, reflecting
+                            infinite shapes and personal perspectives through the simple yet profound logic of geometric
+                            reorganization.
+                        </p>
+                    </div>
+                    <div class="pt-8 border-t border-white/10 text-xs mono flex flex-col gap-2.5">
+                        <div class="flex justify-between">
+                            <span class="opacity-30 uppercase">Year</span>
+                            <span>2026</span>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                            <span class="opacity-30 uppercase">More Detail</span>
+                            <a href="../pdf/tavola tecnica tangram(2).pdf" target="_blank"
+                                class="opacity-60 hover:opacity-100 hover:underline underline-offset-4 transition-all duration-300">
+                                VIEW PROJECT ↗
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section mb-32 border-t border-white/5">
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../images/img4.jpg" alt="P2-1"></div>
+                    <div class="swiper-slide"><img src="../images/img5.jpg" alt="P2-2"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-8 py-20 flex flex-col md:flex-row justify-between gap-16">
+                <div class="md:w-1/2 reveal">
+                    <h2 class="text-5xl md:text-7xl font-bold tracking-tighter mono italic uppercase leading-none">
+                        Rinnovare il Quotidiano</h2>
+                    <div class="mt-8 flex gap-4">
+                        <span
+                            class="border border-white/20 px-4 py-1 rounded-full text-[10px] mono opacity-60 uppercase">RECYCLE</span>
+                    </div>
+                </div>
+                <div class="md:w-1/2 reveal">
+                    <div class="text-lg md:text-xl text-zinc-400 leading-relaxed font-light space-y-2">
+                        <p>
+                            Renewing the Everyday is an innovative design project that breathes new life into discarded
+                            materials, transforming them into functional and sustainable art.
+                        </p>
+                        <p>
+                            Our signature bag is crafted from repurposed bicycle inner tubes—a durable material often
+                            destined for landfills. By blending minimalist aesthetics with meticulous craftsmanship, we
+                            create pieces that balance durability, style, and utility.
+                        </p>
+                        <p>
+                            Each bag serves as a symbol of environmental consciousness, fostering an emotional
+                            connection between the user and the unique story behind the recycled product.
+                        </p>
+                    </div>
+                    <div class="pt-8 border-t border-white/10 text-xs mono flex flex-col gap-2.5">
+                        <div class="flex justify-between">
+                            <span class="opacity-30 uppercase">Year</span>
+                            <span>2024</span>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                            <span class="opacity-30 uppercase">More Detail</span>
+                            <a href="../pdf/rinnova.pdf" target="_blank"
+                                class="opacity-60 hover:opacity-100 hover:underline underline-offset-4 transition-all duration-300">
+                                VIEW PROJECT ↗
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section mb-32 border-t border-white/5">
+            <div class="swiper mySwiper3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../images/img6.jpg" alt="P3-1"></div>
+                    <div class="swiper-slide"><img src="../images/img7.jpg" alt="P3-2"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-8 py-20 flex flex-col md:flex-row justify-between gap-16">
+                <div class="md:w-1/2 reveal">
+                    <h2 class="text-5xl md:text-7xl font-bold tracking-tighter mono italic uppercase leading-none">
+                        Bilancia del tempo</h2>
+                    <div class="mt-8 flex gap-4">
+                        <span
+                            class="border border-white/20 px-4 py-1 rounded-full text-[10px] mono opacity-60 uppercase">REDESIGN</span>
+                    </div>
+                </div>
+                <div class="md:w-1/2 reveal">
+                    <div class="text-lg md:text-xl text-zinc-400 leading-relaxed font-light space-y-2">
+                        <p>
+                            "Equilibrium of Time" merges utility with art, inspired by the ancient Chinese steelyard
+                            balance as a symbol of precision and cultural weight.
+                        </p>
+                        <p>
+                            Crafted from natural wood, the piece features three rotating discs representing tens, units,
+                            and months, allowing for manual time adjustment along a central bar displaying the days of
+                            the week.
+                        </p>
+                        <p>
+                            Its minimalist design strikes a perfect balance between ancient tradition and modern
+                            aesthetics, turning the act of tracking time into a tactile, ritualistic experience.
+                        </p>
+                    </div>
+                    <div class="pt-8 border-t border-white/10 text-xs mono flex flex-col gap-2.5">
+                        <div class="flex justify-between">
+                            <span class="opacity-30 uppercase">Year</span>
+                            <span>2023</span>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                            <span class="opacity-30 uppercase">More Detail</span>
+                            <a href="../pdf/group 25_es 3 layout book.pdf" target="_blank"
+                                class="opacity-60 hover:opacity-100 hover:underline underline-offset-4 transition-all duration-300">
+                                VIEW PROJECT ↗
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="mt-40 flex justify-center">
+        <a href="../index.html#works" class="more-info-btn mono text-sm tracking-[0.2em]">
+            BACK TO WORKS
+        </a>
+    </div>
+
+    <footer class="mt-20 border-t border-white/10 py-16 flex flex-col items-center">
+        <p class="text-[10px] mono opacity-20 uppercase">© 2026 Hongfeng Li. Designed for Art & Tech.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+    <script src="../js/particles.js"></script>
+    <script src="../js/works.js"></script>
+    <script src="../js/transition.js"></script>
+</body>
+
+</html>

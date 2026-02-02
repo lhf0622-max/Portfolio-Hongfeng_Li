@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About me</title>
+  <link rel="stylesheet" href="../css/loader.css">
+  <link rel="icon" type="image/png" href="../images/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="../imagesg/favicon.svg" />
+  <link rel="shortcut icon" href="../images/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png" />
+  <link rel="manifest" href="../images/site.webmanifest" />
+  <link rel="stylesheet" href="../css/globle.css">
+  <link rel="stylesheet" href="../css/aboutme_animation.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=DM+Sans:wght@400;500&display=swap"
+    rel="stylesheet">
+
+<body class="bg-black">
+  <div id="page-loader">
+    <div class="loader">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+
+  <canvas id="particle-canvas"></canvas>
+
+  <header
+    class="fixed top-0 w-full z-40 px-4 md:px-8 py-4 md:py-6 flex flex-col md:flex-row justify-between items-center bg-black/10 backdrop-blur-sm gap-4">
+    <div class="text-lg md:text-xl font-bold tracking-tighter mono italic">byHongfengLi</div>
+    <nav class="flex gap-4 md:gap-8 text-[10px] md:text-sm font-medium mono">
+      <a href="../index.html#home"
+        class="nav-link opacity-50 hover:opacity-100 hover:underline underline-offset-2">HOME</a>
+      <a href="../index.html#works"
+        class="nav-link opacity-50 hover:opacity-100 hover:underline underline-offset-2">WORKS</a>
+      <a href="#" class="nav-link active">ABOUT ME</a>
+    </nav>
+  </header>
+
+  <section class="h-screen flex flex-col justify-center items-center text-center relative px-4">
+    <h1 class="text-6xl md:text-8xl font-bold mb-4 rainbow-bounce">HI! CIAO!</h1>
+    <p class="text-xl md:text-2xl mono opacity-80">I’m Hongfeng</p>
+
+    <a href="#about"
+      class="absolute bottom-10 animate-bounce border border-white/30 rounded-full p-4 hover:bg-white hover:text-black transition-colors">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+      </svg>
+    </a>
+  </section>
+
+  <section id="about" class="max-w-6xl mx-auto px-8 py-24 grid md:grid-cols-2 gap-16 items-start">
+    <div class="overflow-hidden rounded-sm bg-zinc-900 aspect-[3/2]">
+      <img src="../images/img15.jpg" alt="Profile"
+        class="w-full h-full object-cover saturate-[1.1] hover:scale-105 transition-all duration-700">
+    </div>
+
+    <div class="space-y-6">
+      <h2 class="text-6xl font-bold tracking-tighter mono italic uppercase">About me</h2>
+
+      <div class="text-zinc-400 leading-relaxed space-y-1 text-lg">
+        <p>
+          My name is <strong class="text-white font-medium">Hongfeng Li</strong>.
+          I am a Chinese designer aspiring to become an interdisciplinary designer.
+        </p>
+
+        <p>
+          I previously studied Mechatronic Engineering in China and am currently
+          enrolled in the Design and Communication at Politecnico di Torino.
+          With a strong interest in computer graphics as
+          a beginner practitioner, I aim to further explore the possibilities of human–computer interaction by bridging
+          engineering, design, and digital technologies. </p>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-4 pt-6 flex-wrap justify-center">
+        <a href="https://www.instagram.com/m78z95" target="_blank"
+          class="inline-flex items-center justify-center gap-3 border border-white/20 px-8 py-4 rounded-full hover:bg-zinc-800 transition-all mono text-sm whitespace-nowrap">
+          <span class="font-bold">INSTAGRAM</span>
+          <span class="opacity-50 text-xs">@李红枫</span>
+        </a>
+
+        <button onclick="copyToClipboard('s321249@studenti.polito.it', this)"
+          class="inline-flex items-center justify-center gap-3 border border-white/20 px-8 py-4 rounded-full hover:bg-zinc-800 transition-all mono text-sm whitespace-nowrap">
+          <span class="font-bold">EMAIL</span>
+          <span class="opacity-50 text-[10px] tracking-tight">s321249@studenti.polito.it</span>
+        </button>
+      </div>
+
+  </section>
+
+  <section id="contact" class="max-w-6xl mx-auto px-8 py-24 border-t border-white/10">
+    <div class="grid md:grid-cols-3 gap-12">
+      <div class="space-y-4">
+        <h2 class="text-4xl font-bold mono">CONTACT</h2>
+        <p class="text-zinc-400 mono text-sm">Find me in Turin, Italy.</p>
+        <div class="pt-4 text-zinc-500 text-xs mono">
+          <p>Politecnico di Torino</p>
+          <p>Corso Luigi Settembrini, 178</p>
+          <p>10135 Torino TO, Italy</p>
+        </div>
+      </div>
+
+      <div
+        class="md:col-span-2 rounded-xl overflow-hidden grayscale invert contrast-[0.9] hover:grayscale-0 hover:invert-0 transition-all duration-1000">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2819.7335099172396!2d7.616038076368952!3d45.030334962281955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47881340ef6330a1%3A0xa805d611f41e47ec!2sPolitecnico%20di%20Torino%20-%20Cittadella%20Politecnica%20del%20Design%20e%20della%20Mobilit%C3%A0%20Sostenibile!5e0!3m2!1sit!2sit!4v1769375860034!5m2!1sit!2sit"
+          width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-white/10 py-16 text-center space-y-10">
+    <p class="text-[10px] mono opacity-20 uppercase">© 2026 Hongfeng Li. Designed for Art & Tech.</p>
+  </footer>
+
+  <script src="../js/utils.js"></script>
+  <script src="../js/particles.js"></script>
+  <script src="../js/transition.js"></script>
+
+
+
+</body>
+
+</html>

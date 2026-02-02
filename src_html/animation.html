@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Project - Hongfeng Li</title>
+    <link rel="stylesheet" href="../css/loader.css">
+    <link rel="icon" type="image/png" href="../images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../imagesg/favicon.svg" />
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png" />
+    <link rel="manifest" href="../images/site.webmanifest" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=DM+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/worksglobal.css">
+</head>
+
+<body class="bg-black">
+    <div id="page-loader">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <canvas id="particle-canvas"></canvas>
+
+    <header
+        class="fixed top-0 w-full z-40 px-4 md:px-8 py-4 md:py-6 flex flex-col md:flex-row justify-between items-center bg-black/10 backdrop-blur-sm gap-4">
+        <div class="text-lg md:text-xl font-bold tracking-tighter mono italic">byHongfengLi</div>
+        <nav class="flex gap-4 md:gap-8 text-[10px] md:text-sm font-medium mono">
+            <a href="../index.html"
+                class="nav-link opacity-50 hover:opacity-100 hover:underline underline-offset-2">HOME</a>
+            <a href="../index.html#works"
+                class="nav-link opacity-50 hover:opacity-100 hover:underline underline-offset-2">WORKS</a>
+            <a href="about_me.html"
+                class="nav-link opacity-50 hover:opacity-100 hover:underline underline-offset-2">ABOUT ME</a>
+        </nav>
+    </header>
+
+    <main class="pt-24">
+        <section class="w-full">
+            <div class="hero-video-container group">
+                <video id="animationVideo" muted loop playsinline webkit-playsinline class="cursor-pointer">
+                    <source src="../video/video3.mp4" type="video/mp4">
+                </video>
+
+                <div
+                    class="absolute bottom-10 left-8 right-8 z-20 flex flex-col gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+
+                    <div id="progressContainer" class="w-full">
+                        <div id="progressBar"></div>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                        <button id="playPauseBtn"
+                            class="mono text-[10px] tracking-[0.2em] border border-white/30 px-4 py-2 rounded-full bg-black/40 backdrop-blur-xl hover:bg-white hover:text-black transition-all">
+                            PAUSE
+                        </button>
+
+                        <button id="muteBtn"
+                            class="mono text-[10px] tracking-[0.2em] border border-white/30 px-4 py-2 rounded-full bg-black/40 backdrop-blur-xl hover:bg-white hover:text-black transition-all">
+                            SOUND: OFF
+                        </button>
+                    </div>
+                </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-8 py-32">
+            <div class="flex flex-col md:flex-row justify-between gap-16 border-t border-white/10 pt-20">
+                <div class="md:w-1/2 reveal">
+                    <h1 class="text-6xl md:text-8xl font-bold tracking-tighter mono italic uppercase leading-none">
+                        PN-0
+                    </h1>
+                    <div class="mt-10 flex gap-4">
+                        <span
+                            class="border border-white/20 px-4 py-1 rounded-full text-[10px] mono opacity-60 uppercase">3D</span>
+                        <span
+                            class="border border-white/20 px-4 py-1 rounded-full text-[10px] mono opacity-60 uppercase">AI_BASED</span>
+                    </div>
+                </div>
+
+                <div class="md:w-1/2 reveal">
+                    <div class="text-xl md:text-2xl text-zinc-400 leading-relaxed font-light space-y-2">
+
+                        <p>
+                            This is an experimental animation that deeply integrates AI-generated technology with human
+                            artistic aesthetics. The work boldly deconstructs the classic fable, transplanting
+                            Pinocchio's core narrative of "seeking father and redemption" into an absurd yet grand
+                            extraterrestrial civilization.
+                        </p>
+
+                        <p>
+                            The workflow first employs generative AI to construct this new narrative logic and script
+                            details, followed by using AI to generate preliminary storyboards. On the basis of
+                            preserving the original tension of the AI-generated content, meticulous manual artistic
+                            refinement and aesthetic direction were applied.
+                        </p>
+
+                        <p>
+                            Finally, AI models were once again utilized for visual rendering and motion generation. This
+                            endeavor represents a redefinition of a classic character in the era of digital life.
+                        </p>
+
+                    </div>
+
+                    <div class="mt-12 pt-8 border-t border-white/10 text-xs mono">
+                        <div class="flex justify-between">
+                            <span class="opacity-30">YEAR</span>
+                            <span>2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <div class="mt-40 flex justify-center">
+        <a href="../index.html#works" class="more-info-btn mono text-sm tracking-[0.2em]">
+            BACK TO WORKS
+        </a>
+    </div>
+
+    <footer class="mt-20 border-t border-white/10 py-16 flex flex-col items-center">
+        <p class="text-[10px] mono opacity-20 uppercase">© 2026 Hongfeng Li. Designed for Art & Tech.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+
+    <script src="../js/particles.js"></script>
+    <script src="../js/works.js"></script>
+    <script src="../js/transition.js"></script>
+</body>
+
+</html>
